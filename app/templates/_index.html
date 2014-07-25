@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="mirus.<%= app_section_name %>">
+<head>
+  <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <link href="app/styles/main.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"> -->
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> --> 
+    <title><%= app_section_title %></title>
+</head>
+<body ontouchstart ng-controller="<%= app_section_name %>Ctrl">
+  <div class="container" ng-view></div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.min.js"></script>
+  <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+  <script src="app/scripts/app.js"></script>
+  <script src="app/scripts/factories/factories.js"></script>
+  <script src="app/scripts/controllers/<%= app_section_name %>.js"></script>
+</body>
+</html>
